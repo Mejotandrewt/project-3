@@ -101,7 +101,8 @@ btnBackground.addEventListener ('click', () => {
 });
 
 /* Code for quest selector */
-let btn = document.querySelector('button.quest');
+
+let btnLocation = document.querySelector('button.quest');
 let result5 = document.querySelector('h1.locationlist');
 
 
@@ -118,7 +119,7 @@ function getRandomNumber(min, max){
 }
 
 
-btn.addEventListener ('click', () => {
+btnLocation.addEventListener ('click', () => {
     let index = getRandomNumber(0, quests.length-1);
     result5.innerText = quests[index];
   
@@ -225,4 +226,27 @@ function updateMonsterImgSrc(src) {
   img.src = src;
 
 
+  /* Code for outcome selector */
+let btnbattle = document.querySelector('button.battle');
+let result6 = document.querySelector('h1.battlelist');
+
+
+let outcomes = ['test', "In an abandoned town.", "In a Open field.", "By a tall tower.", "A destroyed castle.", "The leftovers of an abandone Ork camp.", "In the foothills of a hall mountain.", "By a large lake.", "A fast running river.", "In a huge laybrinth."];
+
+
+function getRandomNumber(min, max){
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+
+    return result;
+
+}
+
+
+btnbattle.addEventListener ('click', () => {
+    let index = getRandomNumber(0, outcomes.length-1);
+    result6.innerText = outcomes[index];
+  
+});
 
