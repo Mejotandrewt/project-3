@@ -1,5 +1,6 @@
 body {
   text-align: center;
+  background-color: burlywood;
 }
 
 p {
@@ -9,19 +10,56 @@ p {
   padding-right: 100px;
 }
 
+/*h2 {
+  font-family: 
+  font-size: 36px;
+}*/
+
 div {
   display: inline-block;
   padding: 10px;
 }
 
 button {
-  display: inline-block;
+  display: block;
+  padding: 10px 20px;
+
+  margin: 0 auto;
+}
+
+.buttoncenter {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
   padding: 10px 20px;
   align-self: center;
 }
 
-.newImage {
-  display: inline-block;
-  padding: 10px 20px;
-  align-self: center;
+figure {
+  margin: 0;
+  position: relative;
+  padding-top: 100%;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+}
+
+.monsterlist {
+  position: absolute;
+  width: 40%;
+  top: 25%;
+  left: 15%;
 }

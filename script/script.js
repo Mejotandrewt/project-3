@@ -142,6 +142,7 @@ function display_monster_image()
         preBuffer[i].src = theImages[i].src;
         preBuffer[i].width = theImages[i].width;
         preBuffer[i].height = theImages[i].height;
+        preBuffer[i].className = "monsterlist"
     }
    
 // create random image number
@@ -164,5 +165,6 @@ for (var p = 0; p < l; p++) {
     images[0].parentNode.removeChild(images[0]);
 }
 // display the image  
+
 document.body.appendChild(newImage);
 }
