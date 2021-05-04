@@ -58,6 +58,14 @@ img {
   padding: none;
 }
 
+.chart {
+  display: block;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 20px;
+  align-self: center;
+}
 figure {
   margin: 0;
   position: relative;
@@ -92,6 +100,8 @@ img {
 }
 
 .ending {
+  display: inline-block;
+  position: relative;
 }
 
 /* Mobile Rules*/
