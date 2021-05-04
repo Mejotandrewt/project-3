@@ -28,8 +28,13 @@ div {
 button {
   display: block;
   padding: 10px 20px;
-
+  color: darkred;
+  border: 3px solid darkred;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: grey;
   margin: 0 auto;
+  font-size: 20px;
+  border-radius: 10px;
 }
 
 .buttoncenter {
@@ -84,4 +89,45 @@ img {
 }
 .monsterlist {
   display: none;
+}
+
+.ending {
+}
+
+/* Mobile Rules*/
+@media (max-width: 767px) {
+  p {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .firstpic {
+    height: 100px;
+    width: 200px;
+    border: 3px solid red;
+    margin: none;
+    padding: none;
+  }
+  .monster {
+    position: absolute;
+    width: 68%;
+    top: 13%;
+    left: 10%;
+    max-width: 250px;
+    height: 250px;
+  }
+  h1 {
+    color: darkred;
+    padding-bottom: none;
+    margin: none;
+  }
+  h2 {
+    color: darkred;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 36px;
+    padding-bottom: none;
+    margin: none;
+  }
 }

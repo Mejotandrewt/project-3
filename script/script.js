@@ -190,8 +190,6 @@ var newImage = getRandomInt(0, preBuffer.length - 1);
   var newImage = getRandomInt(0, preBuffer.length - 1);
   
   
- 
-
   // remove the previous images
   var monster = document.querySelector(".monster");
   monster.src = newImage.src;
@@ -207,44 +205,28 @@ var newImage = getRandomInt(0, preBuffer.length - 1);
   // display the image  
 document.body.appendChild(newImage);
 }
-
-
-/*function setup() {
-  getMonster();
-}
-
-function getMonster() {
-  fetch(newImage)
-    .then(response => response.json())
-    .then(data => updateMonsterImgSrc(data.file));
-}
-
-function updateMonsterImgSrc(src) {
   /* Get the cat image element */
   let img = document.querySelector("monster");
-  /* Update its src*/
-  img.src = src;
+  
 
 
   /* Code for outcome selector */
-let btnbattle = document.querySelector('button.battle');
+let btn = document.querySelector('button.battle');
 let result6 = document.querySelector('h1.battlelist');
 
 
-let outcomes = ['test', "In an abandoned town.", "In a Open field.", "By a tall tower.", "A destroyed castle.", "The leftovers of an abandone Ork camp.", "In the foothills of a hall mountain.", "By a large lake.", "A fast running river.", "In a huge laybrinth."];
+let outcomes = ['You win the fight, and your party memebers survive.', "You lost and you and your entire party die.", "The fight is too much and you have run away.", "The beast downs you, but it gets bored a leaves. You barely make it out alive.", "You slay the beast, but you are severly injured and lost an arm", "A group of Wood Elfs comes to your recuse, and slay the beast",];
 
 
 function getRandomNumber(min, max){
     let step1 = max - min + 1;
     let step2 = Math.random() * step1;
     let result = Math.floor(step2) + min;
-
     return result;
-
 }
 
 
-btnbattle.addEventListener ('click', () => {
+btn.addEventListener ('click', () => {
     let index = getRandomNumber(0, outcomes.length-1);
     result6.innerText = outcomes[index];
   
