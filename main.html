@@ -9,6 +9,8 @@
     <title>D&D Character Creator</title>
   </head>
   <body>
+    <img src="" alt="d-and-d-logo" />
+
     <h1>The World of D&D</h1>
     <p>
       In the wonderful world of D&D, you and a group of friends role-play
@@ -52,15 +54,31 @@
       directions and you find yourself in.
     </p>
 
+    <div>
+      <button class="quest">Location</button>
+      <h1 class="locationlist">???</h1>
+      <p>
+        In the distant you see red glowing eyes. As you focus in on it they come
+        closer and closer until you see this horrendous monster!
+      </p>
+    </div>
+
     <button id="jsstyle" onclick="display_monster_image();">Monster</button>
 
     <figure>
+      <div class="frame-moving">
+        <img
+          class="frame"
+          src="./images/golden-baroque-frame-transparent_720.png"
+          alt="picture-frame"
+        />
+      </div>
+
       <img
-        class="frame"
+        class="monster"
         src="./images/golden-baroque-frame-transparent_720.png"
-        alt="picture-frame"
+        alt="monster-img"
       />
-      <img class="monster" src="" alt="picture-frame" />
     </figure>
   </body>
 </html>

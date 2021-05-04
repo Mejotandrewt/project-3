@@ -100,6 +100,32 @@ btnBackground.addEventListener ('click', () => {
   
 });
 
+/* Code for quest selector */
+let btn = document.querySelector('button.quest');
+let result5 = document.querySelector('h1.locationlist');
+
+
+let quests = ['In a deep dark cave. ', "In an abandoned town.", "In a Open field.", "By a tall tower.", "A destroyed castle.", "The leftovers of an abandone Ork camp.", "In the foothills of a hall mountain.", "By a large lake.", "A fast running river.", "In a huge laybrinth."];
+
+
+function getRandomNumber(min, max){
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+
+    return result;
+
+}
+
+
+btn.addEventListener ('click', () => {
+    let index = getRandomNumber(0, quests.length-1);
+    result5.innerText = quests[index];
+  
+});
+
+
+
 
 /* Monster picture display */
 
@@ -172,12 +198,31 @@ var newImage = getRandomInt(0, preBuffer.length - 1);
 
   function updateMonsterImgScr(src) {
     /* Get the cat image element */
-    let img = document.querySelector("newImage.src");
+    let img = document.querySelector(newImage);
     /* Update its src*/
-    img.src = src;
+    img.src = newImage;
   }
 
   // display the image  
 document.body.appendChild(newImage);
 }
+
+
+/*function setup() {
+  getMonster();
+}
+
+function getMonster() {
+  fetch(newImage)
+    .then(response => response.json())
+    .then(data => updateMonsterImgSrc(data.file));
+}
+
+function updateMonsterImgSrc(src) {
+  /* Get the cat image element */
+  let img = document.querySelector("monster");
+  /* Update its src*/
+  img.src = src;
+
+
 
