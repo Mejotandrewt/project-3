@@ -1,5 +1,4 @@
-
-
+/* code for race slector*/
 
 let btnRace = document.querySelector('button');
 let result = document.querySelector('h1.racelist');
@@ -24,7 +23,7 @@ btnRace.addEventListener ('click', () => {
   
 });
 
-
+/* Code for class selector */
 
 let btnClass = document.querySelector('button');
 let result2 = document.querySelector('h1.classlist');
@@ -46,5 +45,31 @@ function getRandomNumber(min, max){
 btnClass.addEventListener ('click', () => {
     let index = getRandomNumber(0, playerlist.length-1);
     result2.innerText = playerlist[index];
+  
+});
+
+
+/* Code for background selector */
+
+let btnBackground = document.querySelector('button');
+let result3 = document.querySelector('h1.backgroundlist');
+
+
+let pastlist = ['Farmer', "City Watch", "Military", "Criminal", "Entertainer", "Fisher", "Travler", "Hermit", "Noble", "Outlander"];
+
+
+function getRandomNumber(min, max){
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+
+    return result;
+
+}
+
+
+btnBackground.addEventListener ('click', () => {
+    let index = getRandomNumber(0, pastlist.length-1);
+    result3.innerText = pastlist[index];
   
 });
