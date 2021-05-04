@@ -40,6 +40,7 @@ button {
 .buttoncenter {
   display: flex;
   justify-content: center;
+  padding-bottom: 10px;
 }
 
 img {
@@ -94,6 +95,7 @@ img {
   left: 38.5%;
   max-width: 250px;
   height: 250px;
+  padding-bottom: none;
 }
 .monsterlist {
   display: none;
