@@ -103,21 +103,38 @@ btnBackground.addEventListener ('click', () => {
 
 /* Monster picture display */
 
-function display_random_image() 
+function display_monster_image() 
 {
      var theImages = [{
-        src: "",
-        width: "240",
-        height: "160"
+        src: "https://media.dnd.wizards.com/styles/mosaic_thumbnail/public/mosaic/grid-thumb17.jpg",
+        width: "350",
+        height: "350"
     }, {
-        src: "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
-        width: "320",
-        height: "195"
+        src: "https://i.pinimg.com/originals/41/c0/e1/41c0e190edbed5078f9547941ccd9587.png",
+        width: "350",
+        height: "350"
     }, {
-        src: "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
-        width: "500",
-        height: "343"
-    }];
+        src: "https://www.tribality.com/wp-content/uploads/2014/10/114849_CN_GL.jpg",
+        width: "350",
+        height: "350"
+    }, {
+        src: "https://static.wikia.nocookie.net/forgottenrealms/images/5/59/Mimic-5e.jpg/revision/latest?cb=20200410111521",
+        width: "350",
+        height: "350"
+    }, {
+        src: "https://i.pinimg.com/originals/cd/69/81/cd6981a72d2b8f515dc7acd2e68bafca.jpg",
+        width: "350",
+        height: "350"
+    }, {
+        src: "https://www.aidedd.org/dnd/images/kenku.jpg",
+        width: "350",
+        height: "350"
+    }, {
+        src: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/22/1000/1000/636238956325913912.jpeg",
+        width: "350",
+        height: "350"
+
+}];
     
     var preBuffer = [];
     for (var i = 0, j = theImages.length; i < j; i++) {

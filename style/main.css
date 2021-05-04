@@ -19,3 +19,9 @@ button {
   padding: 10px 20px;
   align-self: center;
 }
+
+.newImage {
+  display: inline-block;
+  padding: 10px 20px;
+  align-self: center;
+}
