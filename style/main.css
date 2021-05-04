@@ -143,3 +143,52 @@ img {
     margin: none;
   }
 }
+
+.footer {
+  text-align: center;
+  margin-top: 64px;
+  border-top: 5px solid red;
+  background-color: blanchedalmond;
+  font-size: 10;
+}
+
+/* accordion edits*/
+
+.accordion {
+  background-color: blanchedalmond;
+  color: red;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: 3px solid red;
+  outline: none;
+  transition: 0.4s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.active,
+.accordion:hover {
+  background-color: gray;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+.accordion:after {
+  content: "\02795";
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796";
+  color: black;
+}
