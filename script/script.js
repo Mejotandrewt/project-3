@@ -107,32 +107,32 @@ function display_monster_image()
 {
      var theImages = [{
         src: "https://media.dnd.wizards.com/styles/mosaic_thumbnail/public/mosaic/grid-thumb17.jpg",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://i.pinimg.com/originals/41/c0/e1/41c0e190edbed5078f9547941ccd9587.png",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://www.tribality.com/wp-content/uploads/2014/10/114849_CN_GL.jpg",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://static.wikia.nocookie.net/forgottenrealms/images/5/59/Mimic-5e.jpg/revision/latest?cb=20200410111521",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://i.pinimg.com/originals/cd/69/81/cd6981a72d2b8f515dc7acd2e68bafca.jpg",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://www.aidedd.org/dnd/images/kenku.jpg",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
     }, {
         src: "https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/22/1000/1000/636238956325913912.jpeg",
-        width: "350",
-        height: "350"
+        width: "250",
+        height: "250"
 
 }];
     
@@ -144,7 +144,8 @@ function display_monster_image()
         preBuffer[i].height = theImages[i].height;
         preBuffer[i].className = "monsterlist"
     }
-   
+
+    
 // create random image number
   function getRandomInt(min,max) 
     {
@@ -158,13 +159,25 @@ imn = Math.floor(Math.random() * (max - min + 1)) + min;
   
 var newImage = getRandomInt(0, preBuffer.length - 1);
  
-// remove the previous images
-var images = document.getElementsByTagName('img');
-var l = images.length;
-for (var p = 0; p < l; p++) {
-    images[0].parentNode.removeChild(images[0]);
-}
-// display the image  
+  // 0 is first image,   preBuffer.length - 1) is  last image
+  var newImage = getRandomInt(0, preBuffer.length - 1);
+  
+  
+ 
 
+  // remove the previous images
+  var monster = document.querySelector(".monster");
+  monster.src = newImage.src;
+
+
+  function updateMonsterImgScr(src) {
+    /* Get the cat image element */
+    let img = document.querySelector("newImage.src");
+    /* Update its src*/
+    img.src = src;
+  }
+
+  // display the image  
 document.body.appendChild(newImage);
 }
+
