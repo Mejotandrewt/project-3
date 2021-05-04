@@ -73,3 +73,31 @@ btnBackground.addEventListener ('click', () => {
     result3.innerText = pastlist[index];
   
 });
+
+
+/* Code for name selector */
+
+let btnName = document.querySelector('button');
+let result4 = document.querySelector('h1.namelist');
+
+
+let names = ['Joseph', "JoJo", "Adam", "Massimo", "Strovious", "Lance", "Bumblefoot", "Kinshin", "Ferra", "Toby"];
+
+
+function getRandomNumber(min, max){
+    let step1 = max - min + 1;
+    let step2 = Math.random() * step1;
+    let result = Math.floor(step2) + min;
+
+    return result;
+
+}
+
+
+btnBackground.addEventListener ('click', () => {
+    let index = getRandomNumber(0, names.length-1);
+    result4.innerText = names[index];
+  
+});
+
+
