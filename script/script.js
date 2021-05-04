@@ -2,7 +2,7 @@ let btnRace = document.querySelector('button');
 let results = document.querySelector('h1');
 
 
-let race = {'Human', "Elf", "Dwarf", "Halfling", "Dragonborn", "Half-Elf", "Gnome"}
+let race = ['Human', "Elf", "Dwarf", "Halfling", "Dragonborn", "Half-Elf", "Gnome"]
 
 function getRandomNumber(min, max){
     let step1 = max - min + 1;
