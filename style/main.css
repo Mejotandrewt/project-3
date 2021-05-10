@@ -223,3 +223,7 @@ img {
   content: "\2796";
   color: black;
 }
+
+.accordion.active + .panel {
+  display: block;
+}

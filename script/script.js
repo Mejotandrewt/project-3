@@ -32,14 +32,8 @@ let result2 = document.querySelector('h1.classlist');
 let playerlist = ['Fighter', "Barbairn", "Bard", "Cleric", "Druid", "Monk", "Paladin", "Ranger", "Rouge", "Wizard"];
 
 
-function getRandomNumber(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min;
 
-    return result;
 
-}
 
 
 btnClass.addEventListener ('click', () => {
@@ -58,14 +52,7 @@ let result3 = document.querySelector('h1.backgroundlist');
 let pastlist = ['Farmer', "City Watch", "Military", "Criminal", "Entertainer", "Fisher", "Travler", "Hermit", "Noble", "Outlander"];
 
 
-function getRandomNumber(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min;
 
-    return result;
-
-}
 
 
 btnBackground.addEventListener ('click', () => {
@@ -84,14 +71,7 @@ let result4 = document.querySelector('h1.namelist');
 let names = ['Joseph', "JoJo", "Adam", "Massimo", "Strovious", "Lance", "Bumblefoot", "Kinshin", "Ferra", "Toby"];
 
 
-function getRandomNumber(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min;
 
-    return result;
-
-}
 
 
 btnBackground.addEventListener ('click', () => {
@@ -109,14 +89,7 @@ let result5 = document.querySelector('h1.locationlist');
 let quests = ['In a deep dark cave. ', "In an abandoned town.", "In a Open field.", "By a tall tower.", "A destroyed castle.", "The leftovers of an abandone Ork camp.", "In the foothills of a hall mountain.", "By a large lake.", "A fast running river.", "In a huge laybrinth."];
 
 
-function getRandomNumber(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min;
 
-    return result;
-
-}
 
 
 btnLocation.addEventListener ('click', () => {
@@ -218,13 +191,6 @@ let result6 = document.querySelector('h1.battlelist');
 let outcomes = ['You win the fight, and your party memebers survive.', "You lost and you and your entire party die.", "The fight is too much and you have run away.", "The beast downs you, but it gets bored a leaves. You barely make it out alive.", "You slay the beast, but you are severly injured and lost an arm", "A group of Wood Elfs comes to your recuse, and slay the beast",];
 
 
-function getRandomNumber(min, max){
-    let step1 = max - min + 1;
-    let step2 = Math.random() * step1;
-    let result = Math.floor(step2) + min;
-    return result;
-}
-
 
 btn.addEventListener ('click', () => {
     let index = getRandomNumber(0, outcomes.length-1);
@@ -240,14 +206,7 @@ for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
    
     this.classList.toggle("active");
-
     
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
   });
 }
 
